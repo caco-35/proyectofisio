@@ -256,24 +256,35 @@ footer ul li a {
 /* Estilos para HTML de Servicios */
 
 .servicios-container {
-    display: flex;
-    flex-direction: column; /* Alineará los servicios uno debajo del otro */
-}
-
-.servicio {
-    display: flex;
-    margin-bottom: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
     padding: 20px;
 }
 
+/* Cada servicio usando Flexbox */
+
+.servicio {
+    display: flex;
+    flex-direction: column;
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.servicio:hover {
+    transform: scale(1.05);
+}
+
 .servicio img {
-    max-width: 500px;
+    width: 100%;
     height: auto;
-    margin-right: 20px; /* Espacio entre la imagen y el texto */
 }
 
 .servicio .descripcion {
-    flex: 1; /* Ocupa todo el espacio restante */
+    padding: 20px;
 }
 
 .servicio h3 {
@@ -285,7 +296,6 @@ footer ul li a {
 .servicio p {
     font-size: 1rem;
     color: #666;
-    padding: 15px;
 }
 
 /* Estilos para HTML de Agentes fisicos */
@@ -370,14 +380,29 @@ footer ul li a {
 
     /* Media para moviles */
 
-    @media screen and ( min-width: 600px ) {
+    @media screen and ( min-width: 768px ) {
         .menu-despegable {
             display: none;
         }
     }
 
-    @media (max-width: 600px) {
+    @media (max-width: 768px) {
         .quienes-somos-pres {
             grid-template-columns: 1fr;
         }
+
+        .servicio {
+            flex-direction: column; /* Asegura que los elementos estén en columna */
+        }
+    
+        .servicio img {
+            margin-bottom: 15px; /* Espacio entre la imagen y el texto */
+        }
+    
+        .servicio .descripcion {
+            padding: 15px;
+            text-align: center; /* Centra el texto */
+        }
     }
+
+    
