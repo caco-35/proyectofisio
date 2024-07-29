@@ -72,11 +72,32 @@ footer ul li a {
     color: black;
 }
 
+
 .titulo h1{
     display: flex;
     justify-content: center;
+    text-align: center;
     margin: 60px 10px 140px 10px;
     font-size: 4em;
+    color: #2c3e50;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background: linear-gradient(to right, #1472ec, #03042b);
+    background-clip: text;
+    color: transparent;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 /* Estilos para HTML de pagina principal */
@@ -257,7 +278,7 @@ footer ul li a {
 
 .servicios-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     gap: 20px;
     padding: 20px;
 }
@@ -308,6 +329,7 @@ footer ul li a {
 
 .agentes-fisicos {
     display: flex;
+    flex-direction: row;
 }
 
 .agentes-fisicos img {
@@ -380,28 +402,39 @@ footer ul li a {
 
     /* Media para moviles */
 
-    @media screen and ( min-width: 768px ) {
+    @media (max-width: 768px) {
+
         .menu-despegable {
             display: none;
         }
-    }
-
-    @media (max-width: 768px) {
         .quienes-somos-pres {
             grid-template-columns: 1fr;
         }
 
         .servicio {
-            flex-direction: column; /* Asegura que los elementos estén en columna */
+            flex-direction: column;
         }
     
         .servicio img {
-            margin-bottom: 15px; /* Espacio entre la imagen y el texto */
+            margin-bottom: 15px;
         }
     
         .servicio .descripcion {
             padding: 15px;
-            text-align: center; /* Centra el texto */
+            text-align: center; 
+        }
+
+        .agentes-fisicos {
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .agentes-fisicos img {
+            max-width: 100%; 
+        }
+        
+        .agentes-fisicos div {
+            text-align: center;
         }
     }
 
