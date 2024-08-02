@@ -1,0 +1,55 @@
+// Mixins para el uso con un import en el main.scss, estas variables tambien se pueden utilizar en otras utilidades de sass
+@import "./variables";
+
+
+  @mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  @mixin button-styles {
+    background-color: $button-bg;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+    &:hover {
+      background-color: $button-hover-bg;
+    }
+  }
+
+  @mixin card-gen {
+    flex: 1 1 calc(25% - 40px); // Ajusta el valor del 25% según sea necesario
+    max-width: 400px;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(202, 7, 7, 0.1);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    img {
+      width: 100%;
+      border-radius: 50%;
+      max-width: 150px;
+      height: auto;
+    }
+
+    .info {
+      margin-top: 20px;
+    }
+
+    h3 {
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 1rem;
+      color: #666;
+    }
+  }
