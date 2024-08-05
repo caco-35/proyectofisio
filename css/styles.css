@@ -62,7 +62,7 @@
 .contact-form input[type=text] textarea,
 .contact-form input[type=email] textarea,
 .contact-form textarea textarea {
-  height: 250px;
+  height: 130px;
 }
 
 .contact-form input[type=submit] {
