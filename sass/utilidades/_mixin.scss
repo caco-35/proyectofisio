@@ -21,7 +21,7 @@
   }
 
   @mixin card-gen {
-    flex: 1 1 calc(25% - 40px); // Ajusta el valor del 25% según sea necesario
+    flex: 1 1 calc(50% - 40px); // Ajusta el valor del 25% según sea necesario
     max-width: 400px;
     padding: 20px;
     background-color: #f0f0f0;

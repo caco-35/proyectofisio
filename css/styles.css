@@ -6,7 +6,7 @@
   margin: 20px;
 }
 .quienes-somos-pres .card {
-  flex: 1 1 calc(25% - 40px);
+  flex: 1 1 calc(50% - 40px);
   max-width: 400px;
   padding: 20px;
   background-color: #f0f0f0;
@@ -275,6 +275,28 @@ footer ul li a {
 }
 .sect-quienes-somos img {
   max-width: 700px;
+}
+
+@media (max-width: 768px) {
+  .quienes-somos-pres .card {
+    flex: 1 1 calc(100% - 40px);
+    max-width: 300px;
+  }
+  .agentes-fisicos {
+    flex-direction: column;
+    align-items: center;
+  }
+  .agentes-fisicos img {
+    max-width: 100%;
+  }
+  .agentes-fisicos div {
+    text-align: center;
+  }
+  .titulo h1 {
+    font-size: 3.5em;
+    transition: 1.5s;
+    margin: 30px 0px;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
