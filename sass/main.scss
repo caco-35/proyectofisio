@@ -12,7 +12,6 @@ body {
 
 .logo {
     width: 80px;
-    margin-left: 100%;
 }
 
 header {
@@ -66,6 +65,7 @@ footer {
 
 
 //corregir, genera un scroll al achicar la pantalla para movil
+
 .titulo h1 {
     @include flex-center;
     text-align: center;
@@ -140,8 +140,7 @@ footer {
 @media (max-width: 768px) {
 
     .quienes-somos-pres .card {
-        flex: 1 1 calc(100% - 40px); // Ajusta el valor según sea necesario
-        max-width: 300px;
+        flex: 1 1 calc(100% - 40px);
     }
 
     .agentes-fisicos {
@@ -162,6 +161,6 @@ footer {
     }
 
     .servicios-container {
-        grid-template-columns: repeat(auto-fit, minmax(300px, 2fr));
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     }
 }

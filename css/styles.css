@@ -133,7 +133,7 @@
 }
 .servicio img {
   width: 100%;
-  height: auto;
+  height: 40%;
 }
 .servicio .descripcion {
   padding: 20px;
@@ -155,7 +155,6 @@ body {
 
 .logo {
   width: 80px;
-  margin-left: 100%;
 }
 
 header {
@@ -280,7 +279,6 @@ footer ul li a {
 @media (max-width: 768px) {
   .quienes-somos-pres .card {
     flex: 1 1 calc(100% - 40px);
-    max-width: 300px;
   }
   .agentes-fisicos {
     flex-direction: column;
