@@ -99,35 +99,200 @@ footer {
 //Estilos para HTML de la pagina principal
 
 //Seccion de quienes somos
-
-.sect-quienes-somos{
-    @include flex-center;
+.sect-quienes-somos {
+    display: flex;
+    flex-direction: row; // Coloca los elementos en una fila en pantallas grandes
+    align-items: center; // Alinea los elementos verticalmente en el centro
     text-align: center;
     margin: 70px 25px;
-    h2{
+    gap: 20px; // Espacio entre elementos
+
+    h2 {
         font-size: 2rem;
         text-align: center;
     }
-    p{
+
+    p {
         font-size: 1rem;
         padding: 20px;
     }
-    a{
-        text-decoration: note;
+
+    a {
+        text-decoration: none;
         font-size: 1rem;
         color: white;
+        background-color: #007bff; // Color de fondo del botón
+        padding: 10px 20px; // Espaciado interno del botón
+        border-radius: 5px; // Esquinas redondeadas del botón
+        margin-top: 10px; // Espacio encima del botón
+        transition: background-color 0.3s; // Efecto de transición
+
+        &:hover {
+            background-color: #0056b3; // Color de fondo al pasar el mouse
+        }
     }
-    img{
+
+    img {
         max-width: 700px;
+        width: 100%;
+        height: auto;
+        border-radius: 10px; // Esquinas redondeadas de la imagen
     }
 }
+
+
+
+
+
+
+
+
+
 
 //Seccion de servicios.
 //Hacer desde cero
 
+
+.sect-servicios {
+    text-align: center;
+    margin: 40px 25px;
+    h2 {
+        font-size: 2rem;
+        margin-bottom: 20px;
+    }
+    .servicios-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); // Mínimo 200px por columna
+        gap: 15px;
+        margin-top: 100px;
+    }
+    .servicio {
+        background-color: #f0f0f0;
+        padding: 20px;
+        border-radius: 5px;
+        transition: background-color 0.3s;
+        a {
+            text-decoration: none;
+            color: #333;
+            font-size: 1.2rem;
+            display: block;
+        }&:hover {
+            background-color: #e0e0e0;
+        }
+    }
+}
+
+
+
 //Seccion horarios de atencion
 
+.sect-horarios {
+    background-color: #1472ec;
+    padding: 40px 25px;
+    text-align: center;
+    margin: 40px 0;
+
+    h2 {
+        font-size: 2rem;
+        margin-bottom: 20px;
+    }
+
+    .horarios-grid {
+        background-color: #1472ec;
+        margin-top: 60px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+        div{
+            background: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        h3 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+        p {
+            font-size: 1rem;
+        }
+    }
+    .contacto {
+        margin-top: 30px;
+        p {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+        }
+        ul {
+            list-style-type: none; // Quitar viñetas
+            padding: 0; // Quitar padding
+            li {
+                font-size: 1rem; // Tamaño de fuente para los números
+                margin: 5px 0; // Espaciado entre números
+            }
+        }
+    }
+}
+
+
+
 //Seccion Ubicacion
+
+.sect-ubicacion {
+    padding: 40px 25px; // Espaciado interno
+    border-radius: 10px; // Esquinas redondeadas
+    margin: 40px 0; // Espaciado entre secciones
+    h2 {
+        text-align: center; // Centra el título
+        font-size: 2rem; // Tamaño de fuente
+        margin-bottom: 20px; // Espacio debajo del título
+    }
+    .ubicacion-grid {
+        display: flex;
+        flex-wrap: wrap; // Permite que los elementos se envuelvan en pantallas pequeñas
+        gap: 20px; // Espacio entre elementos
+        align-items: center; // Alinea verticalmente en el centro
+        margin-top: 100px;
+        .mapa {
+            flex: 1; // Toma el espacio disponible
+            iframe {
+                width: 100%; // Asegura que el iframe ocupe el 100% del contenedor
+                height: 450px; // Altura del iframe
+                border: 0; // Quita el borde
+                border-radius: 10px; // Esquinas redondeadas para el mapa
+            }
+        }
+
+        .detalles {
+            flex: 1; // Toma el espacio disponible
+            background: rgba(255, 255, 255, 0.8); // Fondo blanco semitransparente para los detalles
+            padding: 20px; // Espaciado interno
+            border-radius: 10px; // Esquinas redondeadas
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); // Sombra ligera
+
+            p {
+                font-size: 1rem; // Tamaño de fuente
+                margin: 10px 0; // Espacio entre párrafos
+            }
+
+            .boton {
+                display: inline-block; // Botón como enlace
+                text-decoration: none; // Quitar subrayado
+                background-color: #007bff; // Color de fondo del botón
+                color: white; // Color del texto del botón
+                padding: 10px 20px; // Espaciado interno
+                border-radius: 5px; // Esquinas redondeadas
+                margin-top: 10px; // Espacio encima del botón
+                transition: background-color 0.3s; // Efecto de transición
+
+                &:hover {
+                    background-color: #0056b3; // Color de fondo al pasar el mouse
+                }
+            }
+        }
+    }
+}
+
 
 
 
@@ -162,5 +327,72 @@ footer {
 
     .servicios-container {
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+    
+    .sect-servicios {
+        margin: 20px 10px; // Reduce márgenes en móviles
+        h2 {
+            font-size: 1.5rem; // Tamaño de fuente más pequeño
+        }
+        .servicios-grid {
+            grid-template-columns: repeat(2, 1fr); // Mínimo 2 columnas en pantallas pequeñas
+        }
+        .servicio {
+            font-size: 1rem; // Ajustar el tamaño de la fuente
+        }
+    }
+
+    .sect-horarios {
+        padding: 20px 15px; // Reduce espaciado interno en móviles
+
+        h2 {
+            font-size: 1.5rem; // Tamaño de fuente más pequeño para el título
+        }
+
+        .horarios-grid {
+            grid-template-columns: repeat(2, 1fr); // Mínimo 2 columnas en pantallas pequeñas
+        }
+
+        .contacto {
+            p {
+                font-size: 1rem; // Tamaño de fuente más pequeño para el texto de contacto
+            }
+
+            ul {
+                li {
+                    font-size: 0.9rem; // Tamaño de fuente más pequeño para los números
+                }
+            }
+        }
+    }
+
+    .ubicacion-grid {
+        flex-direction: column; // Coloca los elementos en columna
+        text-align: center; // Centra el texto en pantallas pequeñas
+        .mapa,
+        .detalles {
+            width: 100%; // Asegura que ambos elementos ocupen el 100% del ancho
+            padding: 10px; // Reduce el espaciado interno en pantallas pequeñas
+        }
+        .mapa iframe {
+            height: 300px; // Reduce la altura del iframe en pantallas pequeñas
+        }
+    }
+
+    .sect-quienes-somos{
+        flex-direction: column; // Coloca los elementos en una columna en pantallas pequeñas
+        div {
+            order: 2; // Ordena el div con el texto y botón en segundo lugar
+        }
+        img {
+            order: 1; // Ordena la imagen en primer lugar
+        }
+        p {
+            padding: 10px; // Reduce el padding en pantallas pequeñas
+        }
+        a {
+            font-size: 0.9rem; // Tamaño de fuente más pequeño para el enlace
+            padding: 8px 16px; // Reduce el espaciado interno del botón
+        }
     }
 }
