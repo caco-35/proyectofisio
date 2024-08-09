@@ -101,11 +101,11 @@ footer {
 //Seccion de quienes somos
 .sect-quienes-somos {
     display: flex;
-    flex-direction: row; // Coloca los elementos en una fila en pantallas grandes
-    align-items: center; // Alinea los elementos verticalmente en el centro
+    flex-direction: row; 
+    align-items: center;
     text-align: center;
     margin: 70px 25px;
-    gap: 20px; // Espacio entre elementos
+    gap: 20px;
 
     h2 {
         font-size: 2rem;
@@ -121,14 +121,14 @@ footer {
         text-decoration: none;
         font-size: 1rem;
         color: white;
-        background-color: #007bff; // Color de fondo del botón
-        padding: 10px 20px; // Espaciado interno del botón
-        border-radius: 5px; // Esquinas redondeadas del botón
-        margin-top: 10px; // Espacio encima del botón
-        transition: background-color 0.3s; // Efecto de transición
+        background-color: #007bff;
+        padding: 10px 20px;
+        border-radius: 5px;
+        margin-top: 10px;
+        transition: background-color 0.3s;
 
         &:hover {
-            background-color: #0056b3; // Color de fondo al pasar el mouse
+            background-color: #0056b3;
         }
     }
 
@@ -136,7 +136,7 @@ footer {
         max-width: 700px;
         width: 100%;
         height: auto;
-        border-radius: 10px; // Esquinas redondeadas de la imagen
+        border-radius: 10px;
     }
 }
 
@@ -162,7 +162,7 @@ footer {
     }
     .servicios-grid {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); // Mínimo 200px por columna
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
         gap: 15px;
         margin-top: 100px;
     }
@@ -203,6 +203,7 @@ footer {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
         gap: 20px;
+        overflow: hidden;
         div{
             background: rgba(255, 255, 255, 0.8);
             padding: 20px;
@@ -224,11 +225,11 @@ footer {
             margin-bottom: 10px;
         }
         ul {
-            list-style-type: none; // Quitar viñetas
-            padding: 0; // Quitar padding
+            list-style-type: none;
+            padding: 0;
             li {
-                font-size: 1rem; // Tamaño de fuente para los números
-                margin: 5px 0; // Espaciado entre números
+                font-size: 1rem;
+                margin: 5px 0;
             }
         }
     }
@@ -239,60 +240,61 @@ footer {
 //Seccion Ubicacion
 
 .sect-ubicacion {
-    padding: 40px 25px; // Espaciado interno
-    border-radius: 10px; // Esquinas redondeadas
-    margin: 40px 0; // Espaciado entre secciones
+    padding: 40px 25px;
+    border-radius: 10px;
+    margin: 40px 0;
+    overflow: hidden;
     h2 {
-        text-align: center; // Centra el título
-        font-size: 2rem; // Tamaño de fuente
-        margin-bottom: 20px; // Espacio debajo del título
+        text-align: center;
+        font-size: 2rem;
+        margin-bottom: 20px;
     }
     .ubicacion-grid {
         display: flex;
-        flex-wrap: wrap; // Permite que los elementos se envuelvan en pantallas pequeñas
-        gap: 20px; // Espacio entre elementos
-        align-items: center; // Alinea verticalmente en el centro
+        flex-wrap: wrap;
+        gap: 20px; 
+        align-items: center;
         margin-top: 100px;
         .mapa {
-            flex: 1; // Toma el espacio disponible
+            flex: 1;
             iframe {
-                width: 100%; // Asegura que el iframe ocupe el 100% del contenedor
-                height: 450px; // Altura del iframe
-                border: 0; // Quita el borde
-                border-radius: 10px; // Esquinas redondeadas para el mapa
+                width: 100%;
+                height: 450px;
+                border: 0;
+                border-radius: 10px;
             }
         }
 
         .detalles {
-            flex: 1; // Toma el espacio disponible
-            background: rgba(255, 255, 255, 0.8); // Fondo blanco semitransparente para los detalles
-            padding: 20px; // Espaciado interno
-            border-radius: 10px; // Esquinas redondeadas
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); // Sombra ligera
+            flex: 1;
+            background: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 
             p {
-                font-size: 1rem; // Tamaño de fuente
-                margin: 10px 0; // Espacio entre párrafos
+                font-size: 1rem;
+                margin: 10px 0; 
             }
 
             .boton {
-                display: inline-block; // Botón como enlace
-                text-decoration: none; // Quitar subrayado
-                background-color: #007bff; // Color de fondo del botón
-                color: white; // Color del texto del botón
-                padding: 10px 20px; // Espaciado interno
-                border-radius: 5px; // Esquinas redondeadas
-                margin-top: 10px; // Espacio encima del botón
-                transition: background-color 0.3s; // Efecto de transición
-
+                display: inline-block;
+                text-decoration: none;
+                background-color: #007bff;
+                color: white;
+                padding: 10px 20px;
+                border-radius: 5px;
+                margin-top: 10px;
+                transition: background-color 0.3s;
                 &:hover {
-                    background-color: #0056b3; // Color de fondo al pasar el mouse
+                    background-color: #0056b3;
                 }
             }
         }
     }
 }
 
+//Footer
 
 
 
@@ -330,69 +332,69 @@ footer {
     }
     
     .sect-servicios {
-        margin: 20px 10px; // Reduce márgenes en móviles
+        margin: 20px 10px; 
         h2 {
-            font-size: 1.5rem; // Tamaño de fuente más pequeño
+            font-size: 1.5rem; 
         }
         .servicios-grid {
-            grid-template-columns: repeat(2, 1fr); // Mínimo 2 columnas en pantallas pequeñas
+            grid-template-columns: repeat(2, 1fr);
         }
         .servicio {
-            font-size: 1rem; // Ajustar el tamaño de la fuente
+            font-size: 1rem;
         }
     }
 
     .sect-horarios {
-        padding: 20px 15px; // Reduce espaciado interno en móviles
+        padding: 20px 15px;
 
         h2 {
-            font-size: 1.5rem; // Tamaño de fuente más pequeño para el título
+            font-size: 1.5rem;
         }
 
         .horarios-grid {
-            grid-template-columns: repeat(2, 1fr); // Mínimo 2 columnas en pantallas pequeñas
+            grid-template-columns: repeat(2, 1fr);
         }
 
         .contacto {
             p {
-                font-size: 1rem; // Tamaño de fuente más pequeño para el texto de contacto
+                font-size: 1rem;
             }
 
             ul {
                 li {
-                    font-size: 0.9rem; // Tamaño de fuente más pequeño para los números
+                    font-size: 0.9rem;
                 }
             }
         }
     }
 
     .ubicacion-grid {
-        flex-direction: column; // Coloca los elementos en columna
-        text-align: center; // Centra el texto en pantallas pequeñas
+        flex-direction: column;
+        text-align: center;
         .mapa,
         .detalles {
-            width: 100%; // Asegura que ambos elementos ocupen el 100% del ancho
-            padding: 10px; // Reduce el espaciado interno en pantallas pequeñas
+            width: 100%;
+            padding: 10px;
         }
         .mapa iframe {
-            height: 300px; // Reduce la altura del iframe en pantallas pequeñas
+            height: 300px;
         }
     }
 
     .sect-quienes-somos{
-        flex-direction: column; // Coloca los elementos en una columna en pantallas pequeñas
+        flex-direction: column;
         div {
-            order: 2; // Ordena el div con el texto y botón en segundo lugar
+            order: 2;
         }
         img {
-            order: 1; // Ordena la imagen en primer lugar
+            order: 1;
         }
         p {
-            padding: 10px; // Reduce el padding en pantallas pequeñas
+            padding: 10px;
         }
         a {
-            font-size: 0.9rem; // Tamaño de fuente más pequeño para el enlace
-            padding: 8px 16px; // Reduce el espaciado interno del botón
+            font-size: 0.9rem;
+            padding: 8px 16px; 
         }
     }
 }
