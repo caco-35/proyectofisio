@@ -10,7 +10,7 @@
   
   @mixin button-styles {
     background-color: $button-bg;
-    color: #fff;
+    color: $button-text;
     text-decoration: none;
     padding: 10px 20px;
     border-radius: 4px;
