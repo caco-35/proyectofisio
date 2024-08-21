@@ -1,6 +1,0 @@
-- Todo el proyecto en vista desktop y moviles
-- Sacar los textos lorem y colocar contenido con sentido
-- Sass: nesting, partials, variables, mixin, extend. 
-- Alguna animacion de las que se vieron hoy. (los hover funcionan)
-
-Se entrega link de github y tener la page.
