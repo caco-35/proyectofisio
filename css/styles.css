@@ -99,12 +99,10 @@
 .agentes-fisicos {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
 }
 .agentes-fisicos img {
-  width: 100%;
-  height: auto;
   max-width: 700px;
+  max-height: 500px;
 }
 .agentes-fisicos h2 {
   text-align: center;
@@ -114,7 +112,6 @@
 .agentes-fisicos p {
   font-size: 1rem;
   padding: 25px;
-  color: red;
 }
 
 .servicios-container {
