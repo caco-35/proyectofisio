@@ -1,0 +1,569 @@
+.quienes-somos-pres {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin: 20px;
+}
+.quienes-somos-pres .card {
+  flex: 1 1 calc(50% - 40px);
+  max-width: 400px;
+  padding: 20px;
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(202, 7, 7, 0.1);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.quienes-somos-pres .card img {
+  width: 100%;
+  border-radius: 50%;
+  max-width: 150px;
+  height: auto;
+  max-height: 200px;
+}
+.quienes-somos-pres .card .info {
+  margin-top: 20px;
+}
+.quienes-somos-pres .card h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+.quienes-somos-pres .card p {
+  font-size: 1rem;
+  color: #666;
+}
+
+.contact-form {
+  max-width: 900px;
+  margin: 50px auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.contact-form h1 {
+  font-size: 38px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.contact-form input[type=text],
+.contact-form input[type=email],
+.contact-form textarea {
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+.contact-form input[type=text] textarea,
+.contact-form input[type=email] textarea,
+.contact-form textarea textarea {
+  height: 130px;
+}
+
+.contact-form input[type=submit] {
+  background-color: #4c87af;
+  color: #fff;
+  border: none;
+  padding: 12px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.contact-form input[type=submit]:hover {
+  background-color: #2d648a;
+}
+
+.color-a {
+  font-weight: bold !important;
+}
+.color-a:hover {
+  color: rgb(11, 86, 156) !important;
+}
+
+.ag-container {
+  display: flex;
+  padding: 50px;
+  flex-direction: column;
+}
+
+.agentes-fisicos {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.agentes-fisicos img {
+  width: 100%;
+  height: auto;
+  max-width: 700px;
+}
+.agentes-fisicos h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 25px;
+}
+.agentes-fisicos p {
+  font-size: 1rem;
+  padding: 25px;
+  color: red;
+}
+
+.servicios-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.servicio {
+  display: flex;
+  flex-direction: column;
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s;
+}
+.servicio:hover {
+  transform: scale(1.05);
+}
+.servicio img {
+  width: 100%;
+  height: 40%;
+}
+.servicio .descripcion {
+  padding: 20px;
+}
+.servicio h3 {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+.servicio p {
+  font-size: 1rem;
+  color: #666;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+.logo {
+  width: 80px;
+}
+
+header {
+  width: 100%;
+  height: 100px;
+  background-color: #FFFFFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+}
+header .nav-border {
+  border-bottom: 0.5px solid rgba(194, 192, 192, 0.5764705882);
+  box-shadow: 0 6px 5px 5px rgba(240, 137, 137, 0.192), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+header .icono-menu {
+  font-size: 15px;
+}
+
+footer {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 60px;
+}
+footer ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  margin: auto;
+  list-style: none;
+  justify-content: space-evenly;
+}
+footer ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+.wapp {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  z-index: 1;
+  cursor: pointer;
+}
+.wapp img {
+  width: 80px;
+}
+.wapp img:hover {
+  width: 90px;
+  transition: 1.5s;
+}
+
+.titulo h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 60px 10px 140px 10px;
+  font-size: 4em;
+  color: #2c3e50;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  background: linear-gradient(to right, #1472ec, #03042b);
+  background-clip: text;
+  color: transparent;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  animation: fadeIn 2s ease-in-out;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translate(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.boton {
+  display: inline-block;
+  background-color: #007bff;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+.boton:hover {
+  background-color: #0056b3;
+}
+
+.sect-quienes-somos {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+  margin: 70px 25px;
+  gap: 20px;
+}
+.sect-quienes-somos h2 {
+  font-size: 2rem;
+  text-align: center;
+}
+.sect-quienes-somos p {
+  font-size: 1rem;
+  padding: 20px;
+}
+.sect-quienes-somos a {
+  text-decoration: none;
+  font-size: 1rem;
+  color: black;
+  background-color: #007bff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-top: 10px;
+  transition: background-color 0.3s;
+}
+.sect-quienes-somos a:hover {
+  background-color: #0056b3;
+}
+.sect-quienes-somos img {
+  max-width: 700px;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.sect-servicios {
+  text-align: center;
+  margin: 40px 25px;
+}
+.sect-servicios h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+.sect-servicios .servicios-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+  margin-top: 100px;
+}
+.sect-servicios .servicio {
+  background-color: #a5daeb;
+  padding: 20px;
+  border-radius: 10px;
+  transition: background-color 0.3s, transform 0.3s;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.sect-servicios .servicio a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  font-size: 1.2rem;
+  display: block;
+  font-family: "Open Sans", sans-serif;
+}
+.sect-servicios .servicio:hover {
+  background-color: #b2dfdb;
+  transform: scale(1.05);
+}
+
+.sect-horarios {
+  background-image: url("../../img/footerFisio.jpg");
+  padding: 40px 25px;
+  text-align: center;
+  margin: 40px 0;
+}
+.sect-horarios h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+.sect-horarios .horarios-grid {
+  margin-top: 60px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  overflow: hidden;
+}
+.sect-horarios .horarios-grid div {
+  background-color: #a5daeb;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.sect-horarios .horarios-grid h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+.sect-horarios .horarios-grid p {
+  font-size: 1rem;
+}
+.sect-horarios .contacto {
+  margin-top: 30px;
+}
+.sect-horarios .contacto p {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+.sect-horarios .contacto ul {
+  list-style-type: none;
+  padding: 0;
+}
+.sect-horarios .contacto ul li {
+  font-size: 1rem;
+  margin: 5px 0;
+}
+
+.sect-ubicacion {
+  padding: 40px 25px;
+  border-radius: 10px;
+  margin: 40px 0;
+  overflow: hidden;
+}
+.sect-ubicacion h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+.sect-ubicacion .ubicacion-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: center;
+  margin-top: 100px;
+}
+.sect-ubicacion .ubicacion-grid .mapa {
+  flex: 1;
+}
+.sect-ubicacion .ubicacion-grid .mapa iframe {
+  width: 100%;
+  height: 450px;
+  border: 0;
+  border-radius: 10px;
+}
+.sect-ubicacion .ubicacion-grid .detalles {
+  flex: 1;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.sect-ubicacion .ubicacion-grid .detalles p {
+  font-size: 1rem;
+  margin: 10px 0;
+}
+.sect-ubicacion .ubicacion-grid .detalles .boton {
+  display: inline-block;
+  text-decoration: none;
+  background-color: #007bff;
+  color: rgb(0, 0, 0);
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-top: 10px;
+  transition: background-color 0.3s;
+}
+.sect-ubicacion .ubicacion-grid .detalles .boton:hover {
+  background-color: #0056b3;
+}
+
+.footer {
+  background-image: url("../../img/footerFisio.jpg");
+  color: #000000;
+  padding: 20px 0;
+  text-align: center;
+  position: relative;
+}
+.footer .container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer .container p {
+  margin-top: 2em;
+  font-size: 14px;
+}
+.footer .container .social-media {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 0;
+  display: flex;
+}
+.footer .container .social-media li {
+  margin: 0 10px;
+}
+.footer .container .social-media li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+@media (max-width: 1024px) {
+  .sect-quienes-somos {
+    flex-direction: column;
+  }
+  .sect-quienes-somos div {
+    order: 2;
+  }
+  .sect-quienes-somos img {
+    order: 1;
+  }
+  .sect-quienes-somos p {
+    padding: 10px;
+  }
+  .sect-quienes-somos a {
+    font-size: 0.9rem;
+    padding: 8px 16px;
+  }
+  .agentes-fisicos {
+    flex-direction: column;
+    align-items: center;
+  }
+  .agentes-fisicos img {
+    max-width: 100%;
+  }
+  .agentes-fisicos div {
+    text-align: left;
+  }
+}
+@media (max-width: 768px) {
+  .sect-quienes-somos {
+    flex-direction: column;
+  }
+  .sect-quienes-somos div {
+    order: 2;
+  }
+  .sect-quienes-somos img {
+    order: 1;
+  }
+  .sect-quienes-somos p {
+    padding: 10px;
+  }
+  .sect-quienes-somos a {
+    font-size: 0.9rem;
+    padding: 8px 16px;
+  }
+  .quienes-somos-pres .card {
+    flex: 1 1 calc(100% - 40px);
+  }
+  .agentes-fisicos {
+    flex-direction: column;
+    align-items: center;
+  }
+  .agentes-fisicos img {
+    max-width: 100%;
+  }
+  .agentes-fisicos div {
+    text-align: left;
+  }
+  .titulo h1 {
+    font-size: 3.5em;
+    transition: 1.5s;
+    margin: 30px 0px;
+  }
+  .servicios-container {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+  .sect-servicios {
+    margin: 20px 10px;
+  }
+  .sect-servicios h2 {
+    font-size: 1.5rem;
+  }
+  .sect-servicios .servicios-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .sect-servicios .servicio {
+    font-size: 1rem;
+  }
+  .sect-horarios {
+    padding: 20px 15px;
+  }
+  .sect-horarios h2 {
+    font-size: 1.5rem;
+  }
+  .sect-horarios .horarios-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .sect-horarios .contacto p {
+    font-size: 1rem;
+  }
+  .sect-horarios .contacto ul li {
+    font-size: 0.9rem;
+  }
+  .ubicacion-grid {
+    flex-direction: column;
+    text-align: center;
+  }
+  .ubicacion-grid .mapa,
+  .ubicacion-grid .detalles {
+    width: 100%;
+    padding: 10px;
+  }
+  .ubicacion-grid .mapa iframe {
+    height: 300px;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
