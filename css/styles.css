@@ -304,6 +304,9 @@ footer ul li a {
   gap: 15px;
   margin-top: 100px;
 }
+.sect-servicios .servicios-grid i {
+  color: rgba(21, 108, 221, 0.7803921569);
+}
 .sect-servicios .servicio {
   background-color: #a5daeb;
   padding: 20px;
@@ -327,7 +330,8 @@ footer ul li a {
 }
 
 .sect-horarios {
-  background-image: url("../../img/footerFisio.jpg");
+  background-color: rgba(21, 108, 221, 0.7803921569);
+  width: 100%;
   padding: 40px 25px;
   text-align: center;
   margin: 40px 0;
@@ -425,7 +429,7 @@ footer ul li a {
 }
 
 .footer {
-  background-image: url("../../img/footerFisio.jpg");
+  background-color: rgba(21, 108, 221, 0.7803921569);
   color: #000000;
   padding: 20px 0;
   text-align: center;
